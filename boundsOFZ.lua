@@ -3,7 +3,6 @@ keyRateCB = 7.5
 classCode = "TQOB"
 
 function CreateTable()
-
     t_id = AllocTable()
     AddColumn(t_id, 0, "Бумага", true, QTABLE_STRING_TYPE, 15)
     AddColumn(t_id, 1, "Цена", true, QTABLE_DOUBLE_TYPE, 15)
@@ -12,10 +11,8 @@ function CreateTable()
     AddColumn(t_id, 4, "Купон, %", true, QTABLE_DOUBLE_TYPE, 15)
     AddColumn(t_id, 5, "Премия к ЦБ, бп", true, QTABLE_INT_TYPE, 15)
     AddColumn(t_id, 6, "Погашение", true, QTABLE_STRING_TYPE, 15)
-
     t = CreateWindow(t_id)
     SetWindowCaption(t_id, "ОФЗ")
-
 end
 
 function string.split(str, sep)
